@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26884E3E6A5B6EFD5DBDE030 /* libPods-Zadatak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F2B01B823449340CB2C263 /* libPods-Zadatak.a */; };
+		AC2765141E6881E60019313B /* RepositoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2765131E6881E60019313B /* RepositoryCell.m */; };
+		AC2765181E6886600019313B /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2765171E6886600019313B /* Repository.m */; };
+		AC27651C1E6886800019313B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27651B1E6886800019313B /* User.m */; };
+		AC8E1B9E1E62011800CEC26B /* GHSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8E1B9D1E62011800CEC26B /* GHSearch.m */; };
+		AC9F9B661E6DACC3002B61E8 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F9B651E6DACC3002B61E8 /* BaseCell.m */; };
+		AC9F9B691E6EE67C002B61E8 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F9B681E6EE67C002B61E8 /* NSArray+Extensions.m */; };
+		ACBD4AF51E6D97F400992596 /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4AF41E6D97F400992596 /* UserDetailsViewController.m */; };
+		ACBD4AF81E6D980200992596 /* RepositoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4AF71E6D980200992596 /* RepositoryViewController.m */; };
+		ACBD4AFB1E6D980E00992596 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4AFA1E6D980E00992596 /* BaseViewController.m */; };
+		ACBD4B021E6DA1F600992596 /* UIStoryboard+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBD4B011E6DA1F600992596 /* UIStoryboard+Extensions.m */; };
 		ACF7A7E71E5F4F6300220375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7A7E61E5F4F6300220375 /* main.m */; };
 		ACF7A7EA1E5F4F6300220375 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7A7E91E5F4F6300220375 /* AppDelegate.m */; };
-		ACF7A7ED1E5F4F6300220375 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7A7EC1E5F4F6300220375 /* ViewController.m */; };
+		ACF7A7ED1E5F4F6300220375 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7A7EC1E5F4F6300220375 /* SearchViewController.m */; };
 		ACF7A7F01E5F4F6300220375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7A7EE1E5F4F6300220375 /* Main.storyboard */; };
 		ACF7A7F21E5F4F6300220375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7A7F11E5F4F6300220375 /* Assets.xcassets */; };
 		ACF7A7F51E5F4F6300220375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7A7F31E5F4F6300220375 /* LaunchScreen.storyboard */; };
@@ -35,12 +46,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72CD939543F760A3B5BF8C7F /* Pods-Zadatak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zadatak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zadatak/Pods-Zadatak.debug.xcconfig"; sourceTree = "<group>"; };
+		AC2765121E6881E60019313B /* RepositoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryCell.h; sourceTree = "<group>"; };
+		AC2765131E6881E60019313B /* RepositoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryCell.m; sourceTree = "<group>"; };
+		AC2765161E6886600019313B /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		AC2765171E6886600019313B /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		AC27651A1E6886800019313B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AC27651B1E6886800019313B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AC8E1B9C1E62011800CEC26B /* GHSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSearch.h; sourceTree = "<group>"; };
+		AC8E1B9D1E62011800CEC26B /* GHSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSearch.m; sourceTree = "<group>"; };
+		AC9F9B641E6DACC3002B61E8 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		AC9F9B651E6DACC3002B61E8 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		AC9F9B671E6EE67C002B61E8 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
+		AC9F9B681E6EE67C002B61E8 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
+		ACBD4AF11E6D87BE00992596 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ACBD4AF31E6D97F400992596 /* UserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsViewController.h; sourceTree = "<group>"; };
+		ACBD4AF41E6D97F400992596 /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
+		ACBD4AF61E6D980200992596 /* RepositoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryViewController.h; sourceTree = "<group>"; };
+		ACBD4AF71E6D980200992596 /* RepositoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryViewController.m; sourceTree = "<group>"; };
+		ACBD4AF91E6D980E00992596 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		ACBD4AFA1E6D980E00992596 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		ACBD4B001E6DA1F600992596 /* UIStoryboard+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Extensions.h"; sourceTree = "<group>"; };
+		ACBD4B011E6DA1F600992596 /* UIStoryboard+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Extensions.m"; sourceTree = "<group>"; };
 		ACF7A7E21E5F4F6300220375 /* Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zadatak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7A7E61E5F4F6300220375 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACF7A7E81E5F4F6300220375 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACF7A7E91E5F4F6300220375 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ACF7A7EB1E5F4F6300220375 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ACF7A7EC1E5F4F6300220375 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ACF7A7EB1E5F4F6300220375 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		ACF7A7EC1E5F4F6300220375 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		ACF7A7EF1E5F4F6300220375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACF7A7F11E5F4F6300220375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF7A7F41E5F4F6300220375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +84,8 @@
 		ACF7A8061E5F4F6300220375 /* ZadatakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZadatakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7A80A1E5F4F6300220375 /* ZadatakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZadatakUITests.m; sourceTree = "<group>"; };
 		ACF7A80C1E5F4F6300220375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D586267098C37B1D26093C2A /* Pods-Zadatak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zadatak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zadatak/Pods-Zadatak.release.xcconfig"; sourceTree = "<group>"; };
+		F4F2B01B823449340CB2C263 /* libPods-Zadatak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zadatak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26884E3E6A5B6EFD5DBDE030 /* libPods-Zadatak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +114,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37EB5DE7EAA865DE11737913 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72CD939543F760A3B5BF8C7F /* Pods-Zadatak.debug.xcconfig */,
+				D586267098C37B1D26093C2A /* Pods-Zadatak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AD4427E1BB8EA71778CD275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F2B01B823449340CB2C263 /* libPods-Zadatak.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC2765151E6881EF0019313B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F9B641E6DACC3002B61E8 /* BaseCell.h */,
+				AC9F9B651E6DACC3002B61E8 /* BaseCell.m */,
+				AC2765121E6881E60019313B /* RepositoryCell.h */,
+				AC2765131E6881E60019313B /* RepositoryCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		AC2765191E6886680019313B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC2765161E6886600019313B /* Repository.h */,
+				AC2765171E6886600019313B /* Repository.m */,
+				AC27651A1E6886800019313B /* User.h */,
+				AC27651B1E6886800019313B /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AC8E1B9F1E62013F00CEC26B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC8E1B9C1E62011800CEC26B /* GHSearch.h */,
+				AC8E1B9D1E62011800CEC26B /* GHSearch.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		ACBD4AF21E6D97DD00992596 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD4AF91E6D980E00992596 /* BaseViewController.h */,
+				ACBD4AFA1E6D980E00992596 /* BaseViewController.m */,
+				ACF7A7EB1E5F4F6300220375 /* SearchViewController.h */,
+				ACF7A7EC1E5F4F6300220375 /* SearchViewController.m */,
+				ACBD4AF31E6D97F400992596 /* UserDetailsViewController.h */,
+				ACBD4AF41E6D97F400992596 /* UserDetailsViewController.m */,
+				ACBD4AF61E6D980200992596 /* RepositoryViewController.h */,
+				ACBD4AF71E6D980200992596 /* RepositoryViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ACBD4AFF1E6DA1B900992596 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD4B001E6DA1F600992596 /* UIStoryboard+Extensions.h */,
+				ACBD4B011E6DA1F600992596 /* UIStoryboard+Extensions.m */,
+				AC9F9B671E6EE67C002B61E8 /* NSArray+Extensions.h */,
+				AC9F9B681E6EE67C002B61E8 /* NSArray+Extensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		ACF7A7D91E5F4F6300220375 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +195,8 @@
 				ACF7A7FE1E5F4F6300220375 /* ZadatakTests */,
 				ACF7A8091E5F4F6300220375 /* ZadatakUITests */,
 				ACF7A7E31E5F4F6300220375 /* Products */,
+				37EB5DE7EAA865DE11737913 /* Pods */,
+				9AD4427E1BB8EA71778CD275 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +215,12 @@
 			children = (
 				ACF7A7E81E5F4F6300220375 /* AppDelegate.h */,
 				ACF7A7E91E5F4F6300220375 /* AppDelegate.m */,
-				ACF7A7EB1E5F4F6300220375 /* ViewController.h */,
-				ACF7A7EC1E5F4F6300220375 /* ViewController.m */,
 				ACF7A7EE1E5F4F6300220375 /* Main.storyboard */,
+				ACBD4AF21E6D97DD00992596 /* Controllers */,
+				AC2765151E6881EF0019313B /* Cells */,
+				AC2765191E6886680019313B /* Models */,
+				AC8E1B9F1E62013F00CEC26B /* Service */,
+				ACBD4AFF1E6DA1B900992596 /* Categories */,
 				ACF7A7F11E5F4F6300220375 /* Assets.xcassets */,
 				ACF7A7F31E5F4F6300220375 /* LaunchScreen.storyboard */,
 				ACF7A7F61E5F4F6300220375 /* Info.plist */,
@@ -118,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF7A7E61E5F4F6300220375 /* main.m */,
+				ACBD4AF11E6D87BE00992596 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACF7A80F1E5F4F6300220375 /* Build configuration list for PBXNativeTarget "Zadatak" */;
 			buildPhases = (
+				A270CD04CDE93FBEEBC52BA2 /* [CP] Check Pods Manifest.lock */,
 				ACF7A7DE1E5F4F6300220375 /* Sources */,
 				ACF7A7DF1E5F4F6300220375 /* Frameworks */,
 				ACF7A7E01E5F4F6300220375 /* Resources */,
+				F2CA537DF87899DC0984C432 /* [CP] Embed Pods Frameworks */,
+				2396F46736DCAFAB514C9E8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,13 +387,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2396F46736DCAFAB514C9E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zadatak/Pods-Zadatak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A270CD04CDE93FBEEBC52BA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CA537DF87899DC0984C432 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zadatak/Pods-Zadatak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACF7A7DE1E5F4F6300220375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF7A7ED1E5F4F6300220375 /* ViewController.m in Sources */,
+				ACF7A7ED1E5F4F6300220375 /* SearchViewController.m in Sources */,
+				ACBD4B021E6DA1F600992596 /* UIStoryboard+Extensions.m in Sources */,
+				ACBD4AFB1E6D980E00992596 /* BaseViewController.m in Sources */,
+				AC27651C1E6886800019313B /* User.m in Sources */,
+				ACBD4AF51E6D97F400992596 /* UserDetailsViewController.m in Sources */,
+				AC2765181E6886600019313B /* Repository.m in Sources */,
+				ACBD4AF81E6D980200992596 /* RepositoryViewController.m in Sources */,
 				ACF7A7EA1E5F4F6300220375 /* AppDelegate.m in Sources */,
+				AC9F9B691E6EE67C002B61E8 /* NSArray+Extensions.m in Sources */,
+				AC9F9B661E6DACC3002B61E8 /* BaseCell.m in Sources */,
+				AC2765141E6881E60019313B /* RepositoryCell.m in Sources */,
+				AC8E1B9E1E62011800CEC26B /* GHSearch.m in Sources */,
 				ACF7A7E71E5F4F6300220375 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,8 +599,11 @@
 		};
 		ACF7A8101E5F4F6300220375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CD939543F760A3B5BF8C7F /* Pods-Zadatak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Zadatak/PrefixHeader.pch;
 				INFOPLIST_FILE = Zadatak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.Zadatak;
@@ -433,8 +613,11 @@
 		};
 		ACF7A8111E5F4F6300220375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D586267098C37B1D26093C2A /* Pods-Zadatak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Zadatak/PrefixHeader.pch;
 				INFOPLIST_FILE = Zadatak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.Zadatak;
@@ -507,6 +690,7 @@
 				ACF7A8111E5F4F6300220375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF7A8121E5F4F6300220375 /* Build configuration list for PBXNativeTarget "ZadatakTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +699,7 @@
 				ACF7A8141E5F4F6300220375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF7A8151E5F4F6300220375 /* Build configuration list for PBXNativeTarget "ZadatakUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +708,7 @@
 				ACF7A8171E5F4F6300220375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
