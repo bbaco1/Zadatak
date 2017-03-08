@@ -13,7 +13,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictioanry {
     self = [super init];
     if (self) {
-        self.nameString = [dictioanry objectForKey:@"login"];
+        self.loginString = [dictioanry objectForKey:@"login"];
         self.avatarUrl = [dictioanry objectForKey:@"avatar_url"];
         self.IDString = [dictioanry objectForKey:@"id"];
         self.userUrl = [dictioanry objectForKey:@"url"];

@@ -15,5 +15,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "BaseViewController.h"
 #import "UIStoryboard+Extensions.h"
+#import "User.h"
+#import "Repository.h"
 
 #endif /* PrefixHeader_pch */

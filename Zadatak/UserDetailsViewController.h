@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserDetailsViewController : BaseViewController
+@interface UserDetailsViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) User *author;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (strong, nonatomic) UIImage *avatarImage;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

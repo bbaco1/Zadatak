@@ -53,6 +53,14 @@
     return repositoryCell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [UIView new];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     RepositoryViewController *detailsVC = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"repositoryDetailsID"];
     [self.navigationController pushViewController:detailsVC animated:YES];
@@ -61,8 +69,9 @@
 
 - (void)repositoryCell:(RepositoryCell *)cell buttonTouched:(UIButton *)button {
     UserDetailsViewController *detailsVC = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"userDetailsID"];
+    detailsVC.author = cell.repository.author;
+    detailsVC.avatarImage = cell.avatarImageView.image;
     [self.navigationController pushViewController:detailsVC animated:YES];
-    NSLog(@"user:%@ image touched", cell.repository.author.nameString);
 }
 
 @end

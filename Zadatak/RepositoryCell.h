@@ -21,10 +21,13 @@
 
 @property (weak, nonatomic) id <RepositoryCellDelegate> delegate;
 @property (strong, nonatomic) Repository *repository;
-@property (strong, nonatomic) NSString *stars;
-@property (weak, nonatomic) IBOutlet UILabel *repositoryName;
+@property (weak, nonatomic) IBOutlet UILabel *repositoryNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *userAvatarButton;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UILabel *watchersNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *forkNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *issueNumberLabel;
 
 - (IBAction)userAvatarButtonTouced:(UIButton *)sender;
 
