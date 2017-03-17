@@ -16,24 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.avatarImageView.image = self.avatarImage;
-}
-
-#pragma mark - tableView delegate methods
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return CGFLOAT_MIN;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    return [UIView new];
+    self.avatarImageView.image = self.author.avatarImage;
+    [[GHSearch sharedSearch] getUserDetails:self.author withCallback:^(BOOL success) {
+        if (success) {
+            
+        }
+    }];
 }
 
 @end
