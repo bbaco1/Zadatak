@@ -16,9 +16,10 @@
 @property (strong, nonatomic) NSString *forkNumberString;
 @property (strong, nonatomic) NSString *issueNumberString;
 @property (strong, nonatomic) NSString *languageString;
-@property (strong, nonatomic) NSString *updatedString;
 @property (strong, nonatomic) NSDate *updateDate;
+@property (strong, nonatomic) NSDate *creationDate;
 @property (strong, nonatomic) NSNumber *starsNumber;
+@property (strong, nonatomic) NSURL *detailsUrl;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 

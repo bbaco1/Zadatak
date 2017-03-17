@@ -15,11 +15,16 @@
 @property (strong, nonatomic) NSURL *userUrl;
 @property (strong, nonatomic) NSURL *gistUrl;
 @property (strong, nonatomic) NSURL *reposUrl;
-
 @property (strong, nonatomic) NSString *loginString;
 @property (strong, nonatomic) NSString *nameString;
 @property (strong, nonatomic) NSString *IDString;
 @property (strong, nonatomic) NSString *followersUrlString;
+@property (strong, nonatomic) UIImage *avatarImage;
+@property (strong, nonatomic) NSString *companyString;
+@property (strong, nonatomic) NSString *emailString;
+@property (strong, nonatomic) NSString *followersNumberString;
+@property (strong, nonatomic) NSString *reposNumberString;
+@property (strong, nonatomic) NSString *bioString;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictioanry;
 

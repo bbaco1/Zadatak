@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserDetailsViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
+@interface UserDetailsViewController : BaseViewController
 
 @property (strong, nonatomic) User *author;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
-@property (strong, nonatomic) UIImage *avatarImage;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)userButtonTouched:(UIButton *)sender;
 
 @end

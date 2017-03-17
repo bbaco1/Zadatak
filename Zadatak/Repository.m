@@ -19,9 +19,10 @@
         self.forkNumberString = [dictionary objectForKey:@"forks_count"];
         self.issueNumberString = [dictionary objectForKey:@"open_issues_count"];
         self.languageString = [dictionary objectForKey:@"language"];
-        self.updatedString = [dictionary objectForKey:@"updated_at"];
-        self.updateDate = [self getDateFromString:self.updatedString];
+        self.creationDate = [self getDateFromString:[dictionary objectForKey:@"created_at"]];
+        self.updateDate = [self getDateFromString:[dictionary objectForKey:@"updated_at"]];
         self.starsNumber = [dictionary objectForKey:@"stargazers_count"];
+        self.detailsUrl = [NSURL URLWithString:[dictionary objectForKey:@"html_url"]];
     }
     return self;
 }

@@ -18,6 +18,7 @@
         self.IDString = [dictioanry objectForKey:@"id"];
         self.userUrl = [dictioanry objectForKey:@"url"];
         self.reposUrl = [dictioanry objectForKey:@"repos_url"];
+        self.nameString = [dictioanry objectForKey:@""];
     }
     return self;
 }
@@ -29,5 +30,10 @@
         _avatarUrl = avatarUrl;
     }
 }
+
+//- (void)setFollowersUrlString:(NSString *)followersUrlString {
+//    
+//    
+//}
 
 @end

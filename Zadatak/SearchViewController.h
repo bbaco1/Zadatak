@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GHSearch.h"
 #import "RepositoryCell.h"
 
 @interface SearchViewController : BaseViewController <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, RepositoryCellDelegate>

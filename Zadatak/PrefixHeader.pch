@@ -17,5 +17,6 @@
 #import "UIStoryboard+Extensions.h"
 #import "User.h"
 #import "Repository.h"
+#import "GHSearch.h"
 
 #endif /* PrefixHeader_pch */

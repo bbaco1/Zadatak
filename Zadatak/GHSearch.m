@@ -39,7 +39,7 @@
         NSMutableArray *responseMutableArray = [NSMutableArray new];
         for (NSDictionary *resultsDictionary in [responseObject objectForKey:@"items"]) {
             Repository *repository = [[Repository alloc] initWithDictionary:resultsDictionary];
-            
+
             [responseMutableArray addObject:repository];
         }
         
@@ -48,6 +48,20 @@
         failureCallback(error);
         NSLog(@"Failed to get search results with error: %@", error);
     }];
+}
+
+- (void)getUserDetails:(User *)user withCallback:(void(^)(BOOL success))callback {
+    NSString *getString = [NSString stringWithFormat:@"user/%@", user.IDString];
+    [manager GET:getString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        user.nameString = [responseObject objectForKey:@"name"];
+        
+        if (responseObject != nil) {
+            callback(@YES);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Failed with error: %@", error);
+    }];
+
 }
 
 @end

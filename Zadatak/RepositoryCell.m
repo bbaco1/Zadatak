@@ -24,6 +24,7 @@
 - (void)setAvatarImageWithUrl:(NSURL *)avatarUrl {
     NSURLRequest *request = [NSURLRequest requestWithURL:avatarUrl];
     [self.avatarImageView setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+        self.repository.author.avatarImage = image;
         [self.avatarImageView setImage:image];
     } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
         NSLog(@"Failed to get image with error: %@", error);

@@ -326,6 +326,7 @@
 				TargetAttributes = {
 					ACF7A7E11E5F4F6300220375 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8HYT6G9QWN;
 						ProvisioningStyle = Automatic;
 					};
 					ACF7A7FA1E5F4F6300220375 = {
@@ -602,6 +603,7 @@
 			baseConfigurationReference = 72CD939543F760A3B5BF8C7F /* Pods-Zadatak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8HYT6G9QWN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Zadatak/PrefixHeader.pch;
 				INFOPLIST_FILE = Zadatak/Info.plist;
@@ -616,6 +618,7 @@
 			baseConfigurationReference = D586267098C37B1D26093C2A /* Pods-Zadatak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8HYT6G9QWN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Zadatak/PrefixHeader.pch;
 				INFOPLIST_FILE = Zadatak/Info.plist;

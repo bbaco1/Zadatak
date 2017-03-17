@@ -63,14 +63,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     RepositoryViewController *detailsVC = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"repositoryDetailsID"];
+    detailsVC.repository = [datasource objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:detailsVC animated:YES];
-    NSLog(@"user tapped on row: %ld", indexPath.row);
 }
 
 - (void)repositoryCell:(RepositoryCell *)cell buttonTouched:(UIButton *)button {
     UserDetailsViewController *detailsVC = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"userDetailsID"];
     detailsVC.author = cell.repository.author;
-    detailsVC.avatarImage = cell.avatarImageView.image;
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
 
