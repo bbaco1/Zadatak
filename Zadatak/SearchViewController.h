@@ -13,6 +13,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttonCollection;
+
+- (IBAction)sortButtonTouched:(UIButton *)sender;
 
 @end
 

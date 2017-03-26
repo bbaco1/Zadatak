@@ -31,9 +31,10 @@
     return self;
 }
 
-- (void)searchWithSearchString:(NSString *)searchString withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback {
+- (void)searchWithSearchString:(NSString *)searchString withSort:(NSString *)sort withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback {
     NSDictionary *parameters = @{
-                                 @"q": searchString
+                                 @"q": searchString,
+                                 @"sort":sort
                                  };
     [manager GET:@"search/repositories" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableArray *responseMutableArray = [NSMutableArray new];

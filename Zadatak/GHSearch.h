@@ -13,7 +13,7 @@
 @interface GHSearch : NSObject
 
 + (GHSearch *)sharedSearch;
-- (void)searchWithSearchString:(NSString *)searchString withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback;
+- (void)searchWithSearchString:(NSString *)searchString withSort:(NSString *)sort withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback;
 - (void)getUserDetails:(User *)user withCallback:(void(^)(BOOL success))callback;
 
 @end

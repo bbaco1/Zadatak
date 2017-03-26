@@ -31,9 +31,4 @@
     }
 }
 
-//- (void)setFollowersUrlString:(NSString *)followersUrlString {
-//    
-//    
-//}
-
 @end
