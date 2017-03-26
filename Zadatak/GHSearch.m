@@ -51,7 +51,7 @@
     }];
 }
 
-- (void)getUserDetails:(User *)user withCallback:(void(^)(BOOL success))callback {
+- (void)getUserDetails:(Author *)user withCallback:(void(^)(BOOL success))callback {
     NSString *getString = [NSString stringWithFormat:@"user/%@", user.IDString];
     [manager GET:getString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         user.nameString = [responseObject objectForKey:@"name"];

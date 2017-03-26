@@ -6,9 +6,9 @@
 //  Copyright © 2017 Milorad Orzes. All rights reserved.
 //
 
-#import "User.h"
+#import "Author.h"
 
-@implementation User
+@implementation Author
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictioanry {
     self = [super init];
@@ -16,7 +16,7 @@
         self.loginString = [dictioanry objectForKey:@"login"];
         self.avatarUrl = [dictioanry objectForKey:@"avatar_url"];
         self.IDString = [dictioanry objectForKey:@"id"];
-        self.userUrl = [dictioanry objectForKey:@"url"];
+        self.authorUrl = [dictioanry objectForKey:@"html_url"];
         self.reposUrl = [dictioanry objectForKey:@"repos_url"];
         self.nameString = [dictioanry objectForKey:@""];
     }
@@ -28,6 +28,14 @@
         _avatarUrl = [NSURL URLWithString:(NSString *)avatarUrl];
     } else if ([avatarUrl isKindOfClass:[NSURL class]]) {
         _avatarUrl = avatarUrl;
+    }
+}
+
+- (void)setAuthorUrl:(NSURL *)authorUrl {
+    if ([authorUrl isKindOfClass:[NSString class]]) {
+        _authorUrl = [NSURL URLWithString:(NSString *)authorUrl];
+    } else if ([authorUrl isKindOfClass:[NSURL class]]) {
+        _authorUrl = authorUrl;
     }
 }
 

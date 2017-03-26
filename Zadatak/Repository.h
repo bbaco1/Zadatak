@@ -11,7 +11,7 @@
 @interface Repository : NSObject
 
 @property (strong, nonatomic) NSString *nameString;
-@property (strong, nonatomic) User *author;
+@property (strong, nonatomic) Author *author;
 @property (strong, nonatomic) NSString *watchersString;
 @property (strong, nonatomic) NSString *forkNumberString;
 @property (strong, nonatomic) NSString *issueNumberString;

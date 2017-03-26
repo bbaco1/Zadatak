@@ -24,4 +24,11 @@
     }];
 }
 
+- (IBAction)userGithubButtonTouched:(UIButton *)sender {
+    UIApplication *application = [UIApplication sharedApplication];
+    if ([application canOpenURL:self.author.authorUrl]) {
+        [application openURL:self.author.authorUrl options:@{} completionHandler:nil];
+    }
+}
+
 @end

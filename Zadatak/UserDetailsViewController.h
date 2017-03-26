@@ -10,9 +10,9 @@
 
 @interface UserDetailsViewController : BaseViewController
 
-@property (strong, nonatomic) User *author;
+@property (strong, nonatomic) Author *author;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-- (IBAction)userButtonTouched:(UIButton *)sender;
+
+- (IBAction)userGithubButtonTouched:(UIButton *)sender;
 
 @end

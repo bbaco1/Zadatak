@@ -10,7 +10,7 @@
 		26884E3E6A5B6EFD5DBDE030 /* libPods-Zadatak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F2B01B823449340CB2C263 /* libPods-Zadatak.a */; };
 		AC2765141E6881E60019313B /* RepositoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2765131E6881E60019313B /* RepositoryCell.m */; };
 		AC2765181E6886600019313B /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2765171E6886600019313B /* Repository.m */; };
-		AC27651C1E6886800019313B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27651B1E6886800019313B /* User.m */; };
+		AC8082371E87C62F0068C8D6 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8082361E87C62F0068C8D6 /* Author.m */; };
 		AC8E1B9E1E62011800CEC26B /* GHSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8E1B9D1E62011800CEC26B /* GHSearch.m */; };
 		AC9F9B661E6DACC3002B61E8 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F9B651E6DACC3002B61E8 /* BaseCell.m */; };
 		AC9F9B691E6EE67C002B61E8 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F9B681E6EE67C002B61E8 /* NSArray+Extensions.m */; };
@@ -51,8 +51,8 @@
 		AC2765131E6881E60019313B /* RepositoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryCell.m; sourceTree = "<group>"; };
 		AC2765161E6886600019313B /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		AC2765171E6886600019313B /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
-		AC27651A1E6886800019313B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		AC27651B1E6886800019313B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AC8082351E87C62F0068C8D6 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		AC8082361E87C62F0068C8D6 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
 		AC8E1B9C1E62011800CEC26B /* GHSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSearch.h; sourceTree = "<group>"; };
 		AC8E1B9D1E62011800CEC26B /* GHSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSearch.m; sourceTree = "<group>"; };
 		AC9F9B641E6DACC3002B61E8 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -147,8 +147,8 @@
 			children = (
 				AC2765161E6886600019313B /* Repository.h */,
 				AC2765171E6886600019313B /* Repository.m */,
-				AC27651A1E6886800019313B /* User.h */,
-				AC27651B1E6886800019313B /* User.m */,
+				AC8082351E87C62F0068C8D6 /* Author.h */,
+				AC8082361E87C62F0068C8D6 /* Author.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -441,10 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8082371E87C62F0068C8D6 /* Author.m in Sources */,
 				ACF7A7ED1E5F4F6300220375 /* SearchViewController.m in Sources */,
 				ACBD4B021E6DA1F600992596 /* UIStoryboard+Extensions.m in Sources */,
 				ACBD4AFB1E6D980E00992596 /* BaseViewController.m in Sources */,
-				AC27651C1E6886800019313B /* User.m in Sources */,
 				ACBD4AF51E6D97F400992596 /* UserDetailsViewController.m in Sources */,
 				AC2765181E6886600019313B /* Repository.m in Sources */,
 				ACBD4AF81E6D980200992596 /* RepositoryViewController.m in Sources */,

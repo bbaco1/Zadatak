@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+@interface Author : NSObject
 
 @property (strong, nonatomic) NSURL *avatarUrl;
 @property (strong, nonatomic) NSURL *organisationsUrl;
-@property (strong, nonatomic) NSURL *userUrl;
+@property (strong, nonatomic) NSURL *authorUrl;
 @property (strong, nonatomic) NSURL *gistUrl;
 @property (strong, nonatomic) NSURL *reposUrl;
 @property (strong, nonatomic) NSString *loginString;

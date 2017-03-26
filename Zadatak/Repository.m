@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.nameString = [dictionary objectForKey:@"name"];
-        self.author = [[User alloc] initWithDictionary:[dictionary objectForKey:@"owner"]];
+        self.author = [[Author alloc] initWithDictionary:[dictionary objectForKey:@"owner"]];
         self.watchersString = [dictionary objectForKey:@"watchers_count"];
         self.forkNumberString = [dictionary objectForKey:@"forks_count"];
         self.issueNumberString = [dictionary objectForKey:@"open_issues_count"];

@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Repository.h"
-#import "User.h"
+#import "Author.h"
 
 @interface GHSearch : NSObject
 
 + (GHSearch *)sharedSearch;
 - (void)searchWithSearchString:(NSString *)searchString withSort:(NSString *)sort withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback;
-- (void)getUserDetails:(User *)user withCallback:(void(^)(BOOL success))callback;
+- (void)getUserDetails:(Author *)user withCallback:(void(^)(BOOL success))callback;
 
 @end
