@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSURL *reposUrl;
 @property (strong, nonatomic) NSString *loginString;
 @property (strong, nonatomic) NSString *nameString;
-@property (strong, nonatomic) NSString *IDString;
+@property (strong, nonatomic) NSNumber *IDNumber;
 @property (strong, nonatomic) NSString *followersUrlString;
 @property (strong, nonatomic) UIImage *avatarImage;
 @property (strong, nonatomic) NSString *companyString;

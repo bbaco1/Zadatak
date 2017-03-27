@@ -14,6 +14,6 @@
 
 + (GHSearch *)sharedSearch;
 - (void)searchWithSearchString:(NSString *)searchString withSort:(NSString *)sort withCallback:(void(^)(NSArray *resposne))callback failedWithError:(void(^)(NSError *error))failureCallback;
-- (void)getUserDetails:(Author *)user withCallback:(void(^)(BOOL success))callback;
+- (void)getAuthorDetails:(Author *)author withCallback:(void(^)(BOOL success))callback;
 
 @end

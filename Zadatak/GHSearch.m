@@ -40,7 +40,6 @@
         NSMutableArray *responseMutableArray = [NSMutableArray new];
         for (NSDictionary *resultsDictionary in [responseObject objectForKey:@"items"]) {
             Repository *repository = [[Repository alloc] initWithDictionary:resultsDictionary];
-
             [responseMutableArray addObject:repository];
         }
         
@@ -51,10 +50,16 @@
     }];
 }
 
-- (void)getUserDetails:(Author *)user withCallback:(void(^)(BOOL success))callback {
-    NSString *getString = [NSString stringWithFormat:@"user/%@", user.IDString];
+- (void)getAuthorDetails:(Author *)author withCallback:(void(^)(BOOL success))callback {
+    NSString *getString = [NSString stringWithFormat:@"user/%@", author.IDNumber];
     [manager GET:getString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        user.nameString = [responseObject objectForKey:@"name"];
+        author.nameString = [responseObject objectForKey:@"name"];
+        author.organisationsUrl = [responseObject objectForKey:@"organisation_url"];
+        author.followersNumberString = [responseObject objectForKey:@"followers"];
+        author.emailString = [responseObject objectForKey:@"email"];
+        author.companyString = [responseObject objectForKey:@"company"];
+        author.bioString = [responseObject objectForKey:@"bio"];
+        author.reposNumberString = [responseObject objectForKey:@"public_repos"];
         
         if (responseObject != nil) {
             callback(@YES);
@@ -62,7 +67,6 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Failed with error: %@", error);
     }];
-
 }
 
 @end

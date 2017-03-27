@@ -15,7 +15,7 @@
     if (self) {
         self.loginString = [dictioanry objectForKey:@"login"];
         self.avatarUrl = [dictioanry objectForKey:@"avatar_url"];
-        self.IDString = [dictioanry objectForKey:@"id"];
+        self.IDNumber = [dictioanry objectForKey:@"id"];
         self.authorUrl = [dictioanry objectForKey:@"html_url"];
         self.reposUrl = [dictioanry objectForKey:@"repos_url"];
         self.nameString = [dictioanry objectForKey:@""];
@@ -37,6 +37,42 @@
     } else if ([authorUrl isKindOfClass:[NSURL class]]) {
         _authorUrl = authorUrl;
     }
+}
+
+- (void)setCompanyString:(NSString *)companyString {
+    if ([companyString isKindOfClass:[NSString class]]) {
+        _companyString = companyString;
+    } else {
+        _companyString = @"-";
+    }
+}
+
+- (void)setEmailString:(NSString *)emailString {
+    if ([emailString isKindOfClass:[NSString class]]) {
+        _emailString = emailString;
+    } else {
+        _emailString = @"-";
+    }
+}
+
+- (void)setReposUrl:(NSURL *)reposUrl {
+    if ([reposUrl isKindOfClass:[NSURL class]]) {
+        _reposUrl = reposUrl;
+    } else {
+        _reposUrl = nil;
+    }
+}
+
+- (void)setBioString:(NSString *)bioString {
+    if ([bioString isKindOfClass:[NSString class]]) {
+        _bioString = bioString;
+    } else {
+        _bioString = @"-";
+    }
+}
+
+- (void)setFollowersNumberString:(NSString *)followersNumberString {
+    _followersUrlString = [NSString stringWithFormat:@"%ld", (long)followersNumberString];
 }
 
 @end
